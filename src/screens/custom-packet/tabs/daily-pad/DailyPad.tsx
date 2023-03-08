@@ -2,8 +2,8 @@ import * as React from 'react';
 import {View} from 'react-native';
 
 import styles from './DailyPad.style';
-import PadSlider from '../../components/pad-slider/PadSlider';
 import {localStrings} from '../../../../shared/localization';
+import PadSlider from '../../components/pad-slider/PadSlider';
 
 interface IDailyPadProps {
   handleOnStandard: (value: number) => void;
@@ -20,6 +20,7 @@ const DailyPad = (props: IDailyPadProps) => {
   ) => (
     <PadSlider
       step={10}
+      value={0}
       title={padTitle}
       minimumValue={minimumValue}
       maximumValue={maximumValue}

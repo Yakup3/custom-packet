@@ -2,8 +2,8 @@ import * as React from 'react';
 import {View} from 'react-native';
 
 import styles from './Tampon.style';
-import PadSlider from '../../components/pad-slider/PadSlider';
 import {localStrings} from '../../../../shared/localization';
+import PadSlider from '../../components/pad-slider/PadSlider';
 
 interface ITamponProps {
   handleOnMini: (value: number) => void;
@@ -20,6 +20,7 @@ const Tampon = (props: ITamponProps) => {
   ) => (
     <PadSlider
       step={10}
+      value={0}
       title={padTitle}
       minimumValue={minimumValue}
       maximumValue={maximumValue}
